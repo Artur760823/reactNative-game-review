@@ -3,6 +3,7 @@ import Home from "./screens/Home";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import { Text, View, StyleSheet } from "react-native";
+import Navigator from './routes/homeStack';
 
 // const getFonts = ()=>{
 //   return Font.loadAsync({
@@ -23,6 +24,6 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-      <Home />
+      <Navigator />
   );
 }
